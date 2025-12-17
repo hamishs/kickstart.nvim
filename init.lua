@@ -682,6 +682,7 @@ require('lazy').setup({
           },
         },
         ts_ls = {},
+        ruff = {},
 
         -- clangd = {},
         -- gopls = {},
