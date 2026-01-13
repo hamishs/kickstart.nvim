@@ -90,6 +90,10 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Start RPC server for external tools (e.g., Claude Code) to trigger reloads
+vim.fn.serverstart '/tmp/nvim.sock'
+vim.o.autoread = true
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
